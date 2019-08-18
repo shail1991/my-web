@@ -1,0 +1,8 @@
+node{
+  stage ('SCM Checkout'){
+  git 'https://github.com/shail1991/jenkins-1'
+}
+  stage (Compile Package){
+  sh 'mvn package'
+  }
+}
